@@ -1,4 +1,4 @@
-#Lichessable
+# Lichessable
 
 Currently a single python script where the intial parameters  can be changed
 
