@@ -6,10 +6,10 @@ from datetime import datetime, timezone
 #,'Inaccuracy'
 username='my_username'
 last_n_days=30
-mistake_types=['Blunder','Mistake']
-dl_games=True
-games_pgn_loc="my_game_loc.pgn"
-out_pgn_loc="my_tactics_loc.pgn"
+mistake_types=['Blunder','Mistake'] #Inaccuracy
+dl_games=True #if False will read file at game_pgn_loc instead of dling a file from lichess and saving to that location
+games_pgn_loc="my_game_loc.pgn" #pgn games location
+out_pgn_loc="my_tactics_loc.pgn" #output chessable tactics pgn locaiton
 
 if dl_games:
     utc_cutoff=str(round(datetime.now(timezone.utc).timestamp() * 1000) -last_n_days*60*60*24*1000) 
